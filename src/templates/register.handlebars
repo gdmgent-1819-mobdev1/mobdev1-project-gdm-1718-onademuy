@@ -1,0 +1,81 @@
+<form id="form1" class="registerForm" method="post">
+    <table border="0">
+        <tr>
+            <td><label type="radio" name="studOwner" value="student">I'm looking for a studio</label><br></td>
+        </tr>
+        <tr>
+            <td><label type="radio" name="studOwner" value="owner">I have a studio</label><br></td>
+        </tr>
+        <tr>
+            <td><label for="firstName">First name</label></td>
+            <td><input type="text" name="firstName" id="firstName" required /></td>
+        </tr>
+        <tr>
+            <td><label for="lastName">Last name</label></td>
+            <td><input type="text" name="lastName" id="lastName" required /></td>
+        </tr>
+        <tr>
+            <td><label for="email">E-mail address</label></td>
+            <td><input type="email" name="email" id="email" required /></td>
+        </tr>
+        <tr>
+            <td><label for="homeAdress">Home address</label></td>
+            <td><input type="text" name="homeAddress" id="homeAddress" required /></td>
+        </tr>
+        <tr>
+            <td><label for="postcode">Postcode</label></td>
+            <td><input type="text" name="postcode" id="postcode" required /></td>
+        </tr>
+    <tr>
+            <td><label for="city">City</label></td>
+            <td><input type="text" name="city" id="city" required /></td>
+        </tr>
+        <tr>
+            <td><label for="phoneNumber">Phone number</label></td>
+            <td><input type="tel" name="phoneNumber" id="phoneNumber" required/></td>
+        </tr>
+        <tr>
+            <td><label for="school">What campus are you going to?</label></td><input type="text" name="school" id="school" />
+            <td><select name="school">
+            <option>Campus Mercator (HoGent)</option>
+            <option>Campus Schoonmeersen (HoGent, Ugent)</option>
+            <option>Campus Vesalius (HoGent)</option>
+            <option>Campus Kantienberg (Artevelde)</option>
+            <option>Campus Leeuwstraat (Artevelde)</option> 
+            <option>Campus Brusselsepoortstraat (Artevelde)</option>
+            <option>Campus Kattenberg (Artevelde)</option>
+            <option>Campus Mariakerke (Artevelde)</option>
+            <option>Campus Sint-Amandsberg (Artevelde)</option>
+            <option>Campus Sint-Annaplein (Artevelde)</option>
+            <option>Campus Hoogpoort (Artevelde)</option>
+            <option>Campus Goudstraat (Artevelde)</option>
+            <option>Campus Ledeganck (UGent)</option>
+            <option>Campus Sterre (UGent)</option>
+            <option>Campus Coupure (UGent)</option>
+            <option>Campus Stropkaai (UGent)</option>
+            <option>Campus Merelbeke (UGent)</option>
+            <option>Campus Tweekerken (UGent)</option>
+            <option>Campus Dunant (UGent)</option>
+            <option>Campus Sint-Lucas (UGent, LUCA)</option>
+            <option>Campus Technologie (KU Leuven)</option>
+            </select> </td>
+        </tr>
+        <tr>
+            <td><label for="password">Password</label></td>
+            <td><input type="password" name="password1" id="password1" required /></td>
+        </tr>
+        <tr>
+            <td><label for="password">Confirm password</label></td>
+            <td><input type="password" name="password2" id="password2" required /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox" name="agree" id="agree" onclick="if(this.checked){myFunction()}" />
+            <label for="agree">I agree to the terms and conditions</label></td>
+        </tr>
+        <tr>
+            <td> <a id="btnRegister" class="btn register" type="submit" disabled="disabled">Register</a></td>
+            <td> <a id="btnLogin" class="btn login" type="submit" href="/login">Or log in</a> </td>
+        </tr>
+    </table>
+</form>
