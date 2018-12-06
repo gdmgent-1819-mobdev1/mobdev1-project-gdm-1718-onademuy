@@ -26,9 +26,9 @@ export default () => {
   update(compile(registerTemplate)());
 
   const buttonRegister = document.getElementById("register");
-  buttonRegister.addEventListener('click', e => {
-    if(firebaseReg)
-    //als aangevinkt staat terms
-  })
-
+  buttonRegister.addEventListener('click', (e) => {
+    if (firebaseReg) {
+      // als aangevinkt staat terms
+    }
+  });
 };

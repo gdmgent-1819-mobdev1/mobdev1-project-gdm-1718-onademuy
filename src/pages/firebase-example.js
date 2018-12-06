@@ -25,7 +25,7 @@ export default () => {
     //   const errorMessage = error.message;
     //   console.log(errorCode,errorMessage);
     // });
-    
+ 
     const database = firebase.database().ref('/posts');
     database.on('value', (snapshot) => {
       posts = snapshot.val();
@@ -33,5 +33,4 @@ export default () => {
       // Run the update helper to update the template
       update(compile(aboutTemplate)({ title, loading, posts }));
     });
-  }
-};
+  }};

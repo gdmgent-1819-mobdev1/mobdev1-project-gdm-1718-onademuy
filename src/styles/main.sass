@@ -1,13 +1,21 @@
 @import "../../node_modules/mapbox-gl/dist/mapbox-gl.css"
+@import url('https://fonts.googleapis.com/css?family=Montserrat')
+// font-family: 'Montserrat', sans-serif;
+
+
+
 // Generic styling
 body
+    font-family: 'Montserrat', sans-serif
     font-size: 12px
     margin: 0 auto
-    background: #fefefe
     height: 100vh
     #app
         height: 100%
         position: relative
+        @media (min-width: 600px) 
+            float: left
+            width: 60%
     #map
         top: 0
         bottom: 0
@@ -15,6 +23,10 @@ body
         height: 200px
         text-align: initial
         margin: 0 auto
+
+@media (min-width: 600px) 
+  body 
+
 
 
 // general
